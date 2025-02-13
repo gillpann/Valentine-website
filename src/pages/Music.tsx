@@ -1,6 +1,14 @@
-import { useState, useRef } from 'react';
-import { ArrowLeft, Play, Pause } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useRef } from "react";
+import { ArrowLeft, Play, Pause } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
+// Import cover images
+import greenday from "../assets/images/music/cover/greenday.jpg";
+import sempurna from "../assets/images/music/cover/sempurna.jpg";
+
+// Import audio files
+import greendaySong from "../assets/images/music/song/greenday.mp3";
+import sempurnaSong from "../assets/images/music/song/sempurna.mp3";
 
 const Music = () => {
   const navigate = useNavigate();
@@ -12,15 +20,15 @@ const Music = () => {
     {
       title: "Last Night On Earth",
       artist: "Green Day",
-      cover: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
-      url: "URL_TO_YOUR_SONG"
+      cover: greenday,
+      url: greendaySong, 
     },
     {
       title: "Sempurna",
       artist: "Andra And The Backbone",
-      cover: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
-      url: "URL_TO_YOUR_SONG"
-    }
+      cover: sempurna,
+      url: sempurnaSong,
+    },
   ];
 
   const togglePlay = (index: number) => {
@@ -40,7 +48,7 @@ const Music = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 to-red-100 p-4">
       <button
-        onClick={() => navigate('/together')}
+        onClick={() => navigate("/together")}
         className="mb-8 flex items-center text-gray-600 hover:text-gray-800"
       >
         <ArrowLeft className="w-5 h-5 mr-2" />
