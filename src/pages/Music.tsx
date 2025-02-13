@@ -46,7 +46,7 @@ const Music = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 to-red-100 p-4">
+    <div className="min-h-screen bg-valentine p-4">
       <button
         onClick={() => navigate("/together")}
         className="mb-8 flex items-center text-gray-600 hover:text-gray-800"
@@ -56,7 +56,7 @@ const Music = () => {
       </button>
 
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 whitespace-nowrap">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 whitespace-nowrap">
           Our Favorite Songs ❤️
         </h1>
       </div>

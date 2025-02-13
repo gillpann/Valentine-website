@@ -69,7 +69,7 @@ const Gallery = () => {
       </button>
 
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 animate-fade-in whitespace-nowrap">
+        <h1 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 animate-fade-in whitespace-nowrap">
           Our Beautiful Moments ❤️
         </h1>
       </div>
