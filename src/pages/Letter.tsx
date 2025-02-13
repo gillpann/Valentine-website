@@ -32,6 +32,7 @@ Gilvan`;
       <button
         onClick={() => navigate("/together")}
         className="mb-8 flex items-center text-gray-600 hover:text-gray-800 bg-white/80 px-4 py-2 rounded-full transition-all hover:scale-105"
+        data-aos="fade-down"
       >
         <ArrowLeft className="w-5 h-5 mr-2" />
         Back
@@ -39,12 +40,18 @@ Gilvan`;
 
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
-          <Heart className="w-12 h-12 text-red-500 mx-auto mb-4" />
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 whitespace-nowrap">With Love, For You</h1>
+          <Heart className="w-12 h-12 text-red-500 mx-auto mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200" />
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 whitespace-nowrap" data-aos="fade-up"
+          data-aos-delay="400"
+          >With Love, For You
+          </h1>
         </div>
 
         {!isOpen ? (
-          <div className="text-center">
+          <div className="text-center" data-aos="fade-up"
+        data-aos-delay="600">
             <button
               onClick={() => setIsOpen(true)}
               className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all hover:scale-105"

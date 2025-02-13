@@ -63,13 +63,18 @@ const Gallery = () => {
       <button
         onClick={() => navigate("/together")}
         className="mb-8 flex items-center text-gray-600 hover:text-gray-800 bg-white/80 px-4 py-2 rounded-full transition-all hover:scale-105"
+        data-aos="fade-down"
       >
         <ArrowLeft className="w-5 h-5 mr-2" />
         Back
       </button>
 
-      <div className="text-center mb-12">
-        <h1 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 animate-fade-in whitespace-nowrap">
+      <div
+        className="text-center mb-12"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h1 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 whitespace-nowrap">
           Our Beautiful Moments ❤️
         </h1>
       </div>
@@ -90,6 +95,8 @@ const Gallery = () => {
         pagination={true}
         navigation={true}
         className="w-full max-w-3xl mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="400"
       >
         {photos.map((photo, index) => (
           <SwiperSlide key={index} className="w-full max-w-lg">

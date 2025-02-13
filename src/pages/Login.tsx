@@ -58,14 +58,13 @@ const Login = () => {
             alt="Profile"
             className="w-full h-full object-cover transition-transform hover:scale-110 duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         </div>
 
         {/* Login container - full width on mobile, half width on desktop */}
         <div className="w-full md:w-1/2 p-4 md:p-8">
           <div className="text-center mb-6 md:mb-8">
             <Heart className="w-8 h-8 md:w-12 md:h-12 text-red-500 mx-auto mb-2 md:mb-4 animate-bounce" />
-            <h1 className="text-xl md:text-3xl font-bold text-gray-800 animate-fade-in px-2">
+            <h1 className="text-xl md:text-3xl font-bold text-gray-800 px-2">
               Happy Valentine's Day
             </h1>
           </div>
@@ -75,7 +74,7 @@ const Login = () => {
               type="password"
               value={password}
               readOnly
-              className="w-full text-center text-2xl p-3 border rounded-lg mb-4 bg-white/50 backdrop-blur-sm focus:ring-2 focus:ring-red-300 transition-all"
+              className="w-full text-center text-lg md:text-2xl p-3 border rounded-lg mb-4 bg-white/50 backdrop-blur-sm focus:ring-2 focus:ring-red-300 transition-all"
               placeholder="Enter Password"
             />
             <p className="text-sm text-gray-500 text-center">

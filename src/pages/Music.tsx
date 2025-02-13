@@ -49,14 +49,20 @@ const Music = () => {
     <div className="min-h-screen bg-valentine p-4">
       <button
         onClick={() => navigate("/together")}
-        className="mb-8 flex items-center text-gray-600 hover:text-gray-800"
+        className="mb-8 flex items-center text-gray-600 hover:text-gray-800 bg-white/80 px-4 py-2 rounded-full transition-all hover:scale-105"
+        data-aos="fade-right"
+        data-aos-delay="100"
       >
         <ArrowLeft className="w-5 h-5 mr-2" />
         Back
       </button>
 
       <div className="text-center mb-12">
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 whitespace-nowrap">
+        <h1
+          className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 whitespace-nowrap"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
           Our Favorite Songs ❤️
         </h1>
       </div>
@@ -66,11 +72,15 @@ const Music = () => {
           <div
             key={index}
             className="bg-white rounded-xl shadow-lg overflow-hidden flex items-center p-4"
+            data-aos="fade-up"
+            data-aos-delay={300 + index * 100}
           >
             <img
               src={song.cover}
               alt={song.title}
               className="w-20 h-20 rounded-lg object-cover"
+              data-aos="zoom-in"
+              data-aos-delay={400 + index * 100}
             />
             <div className="ml-4 flex-1">
               <h3 className="font-semibold text-lg">{song.title}</h3>

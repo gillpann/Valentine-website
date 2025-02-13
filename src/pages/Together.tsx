@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Image, Mail, Music, ArrowLeft} from "lucide-react";
+import CountUp from 'react-countup';
 
 const Together = () => {
   const [timeElapsed, setTimeElapsed] = useState({
@@ -37,37 +38,58 @@ const Together = () => {
       <button
         onClick={() => navigate("/")}
         className="mb-8 flex items-center text-gray-600 hover:text-gray-800 bg-white/80 px-4 py-2 rounded-full transition-all hover:scale-105"
+        data-aos="fade-down"
       >
         <ArrowLeft className="w-5 h-5 mr-2" />
         Back
       </button>
 
-      <div className="text-center mb-8 md:mb-12 bg-white/30 backdrop-blur-sm p-4 md:p-6 rounded-2xl">
+      <div 
+        className="text-center mb-8 md:mb-12 bg-white/30 backdrop-blur-sm p-4 md:p-6 rounded-2xl"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <h1 className="text-xl md:text-3xl font-bold text-gray-800 mb-2">
-          How Long We've Been Together? ❤️
+          How Long We've Been Together? ??
         </h1>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all">
+        <div 
+          className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
           <span className="text-4xl font-bold text-red-500 animate-pulse">
-            {timeElapsed.days}
+            <CountUp end={timeElapsed.days} duration={2} />
           </span>
           <p className="text-gray-600">Days</p>
         </div>
-        <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all">
+        <div 
+          className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all"
+          data-aos="zoom-in"
+          data-aos-delay="600"
+        >
           <span className="text-4xl font-bold text-red-500">
-            {timeElapsed.hours}
+            <CountUp end={timeElapsed.hours} duration={2} />
           </span>
           <p className="text-gray-600">Hours</p>
         </div>
-        <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all">
+        <div 
+          className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all"
+          data-aos="zoom-in"
+          data-aos-delay="800"
+        >
           <span className="text-4xl font-bold text-red-500">
-            {timeElapsed.minutes}
+            <CountUp end={timeElapsed.minutes} duration={2} />
           </span>
           <p className="text-gray-600">Minutes</p>
         </div>
-        <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all">
+        <div 
+          className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all"
+          data-aos="zoom-in"
+          data-aos-delay="1000"
+        >
           <span className="text-4xl font-bold text-red-500">
             {timeElapsed.seconds}
           </span>
@@ -79,6 +101,8 @@ const Together = () => {
         <button
           onClick={() => navigate("/gallery")}
           className="flex flex-col items-center space-y-2 group"
+          data-aos="fade-up"
+          data-aos-delay="1200"
         >
           <div className="p-3 md:p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
             <Image className="w-6 h-6 md:w-8 md:h-8 text-red-500" />
@@ -91,6 +115,8 @@ const Together = () => {
         <button
           onClick={() => navigate("/letter")}
           className="flex flex-col items-center space-y-2 group"
+          data-aos="fade-up"
+          data-aos-delay="1400"
         >
           <div className="p-3 md:p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
             <Mail className="w-6 h-6 md:w-8 md:h-8 text-red-500" />
@@ -103,6 +129,8 @@ const Together = () => {
         <button
           onClick={() => navigate("/music")}
           className="flex flex-col items-center space-y-2 group"
+          data-aos="fade-up"
+          data-aos-delay="1600"
         >
           <div className="p-3 md:p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
             <Music className="w-6 h-6 md:w-8 md:h-8 text-red-500" />
@@ -117,4 +145,3 @@ const Together = () => {
 };
 
 export default Together;
-
