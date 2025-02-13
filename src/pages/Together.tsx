@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Heart, Image, Mail, Music, ArrowLeft} from "lucide-react";
+import { Image, Mail, Music, ArrowLeft} from "lucide-react";
 
 const Together = () => {
   const [timeElapsed, setTimeElapsed] = useState({
@@ -43,10 +43,9 @@ const Together = () => {
       </button>
 
       <div className="text-center mb-12 bg-white/30 backdrop-blur-sm p-6 rounded-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
-          Our Love Journey ❤️
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-2 whitespace-nowrap">
+          How Long We've Been Together? ❤️
         </h1>
-        <Heart className="w-12 h-12 text-red-500 mx-auto animate-bounce" />
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">

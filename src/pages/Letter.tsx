@@ -40,7 +40,7 @@ Gilvan`;
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
           <Heart className="w-12 h-12 text-red-500 mx-auto mb-4" />
-          <h1 className="text-4xl font-bold text-gray-800">With Love, For You ❤️</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 whitespace-nowrap">With Love, For You</h1>
         </div>
 
         {!isOpen ? (
