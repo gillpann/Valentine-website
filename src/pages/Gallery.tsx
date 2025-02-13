@@ -1,9 +1,11 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react'
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
+
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -73,6 +75,7 @@ const Gallery = () => {
       </div>
 
       <Swiper
+        modules={[EffectCoverflow, Pagination, Navigation]}
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
@@ -86,7 +89,6 @@ const Gallery = () => {
         }}
         pagination={true}
         navigation={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
         className="w-full max-w-3xl mx-auto"
       >
         {photos.map((photo, index) => (
