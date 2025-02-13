@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Together from "./pages/Together";
 import Gallery from "./pages/Gallery";
@@ -7,7 +7,7 @@ import Music from "./pages/Music";
 
 const App = () => {
   return (
-    <div className="gradient-animate">
+    <div className="gradient-valentine">
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />

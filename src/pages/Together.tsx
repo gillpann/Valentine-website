@@ -33,7 +33,7 @@ const Together = () => {
   }, []);
 
   return (
-    <div className="min-h-screen gradient-animate flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen gradient-valentine flex flex-col items-center justify-center p-4">
       <button
         onClick={() => navigate("/")}
         className="mb-8 flex items-center text-gray-600 hover:text-gray-800 bg-white/80 px-4 py-2 rounded-full transition-all hover:scale-105"
@@ -42,8 +42,8 @@ const Together = () => {
         Back
       </button>
 
-      <div className="text-center mb-12 bg-white/30 backdrop-blur-sm p-6 rounded-2xl">
-        <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-2 whitespace-nowrap">
+      <div className="text-center mb-8 md:mb-12 bg-white/30 backdrop-blur-sm p-4 md:p-6 rounded-2xl">
+        <h1 className="text-xl md:text-3xl font-bold text-gray-800 mb-2">
           How Long We've Been Together? ❤️
         </h1>
       </div>
@@ -75,35 +75,41 @@ const Together = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8">
         <button
           onClick={() => navigate("/gallery")}
           className="flex flex-col items-center space-y-2 group"
         >
-          <div className="p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
-            <Image className="w-8 h-8 text-red-500" />
+          <div className="p-3 md:p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
+            <Image className="w-6 h-6 md:w-8 md:h-8 text-red-500" />
           </div>
-          <span className="text-gray-700 font-medium">Our Gallery</span>
+          <span className="text-sm md:text-base text-gray-700 font-medium">
+            Our Gallery
+          </span>
         </button>
 
         <button
           onClick={() => navigate("/letter")}
           className="flex flex-col items-center space-y-2 group"
         >
-          <div className="p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
-            <Mail className="w-8 h-8 text-red-500" />
+          <div className="p-3 md:p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
+            <Mail className="w-6 h-6 md:w-8 md:h-8 text-red-500" />
           </div>
-          <span className="text-gray-700 font-medium">Love Letter</span>
+          <span className="text-sm md:text-base text-gray-700 font-medium">
+            Love Letter
+          </span>
         </button>
 
         <button
           onClick={() => navigate("/music")}
           className="flex flex-col items-center space-y-2 group"
         >
-          <div className="p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
-            <Music className="w-8 h-8 text-red-500" />
+          <div className="p-3 md:p-4 bg-white/80 backdrop-blur-sm rounded-full shadow-lg group-hover:bg-pink-50 transition-all hover:scale-110">
+            <Music className="w-6 h-6 md:w-8 md:h-8 text-red-500" />
           </div>
-          <span className="text-gray-700 font-medium">Our Playlist</span>
+          <span className="text-sm md:text-base text-gray-700 font-medium">
+            Our Playlist
+          </span>
         </button>
       </div>
     </div>

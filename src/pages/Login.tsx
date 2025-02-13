@@ -49,25 +49,23 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen gradient-animate flex items-center justify-center p-4">
+    <div className="min-h-screen gradient-valentine flex items-center justify-center p-4">
       <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden max-w-4xl w-full flex flex-col md:flex-row">
         {/* Image container - hidden on mobile (smaller than md breakpoint) */}
         <div className="hidden md:block md:w-1/2">
-          <div className="relative w-full h-full overflow-hidden">
-            <img
-              src={profile}
-              alt="Profile"
-              className="w-full h-full object-cover transition-transform hover:scale-110 duration-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-          </div>
+          <img
+            src={profile}
+            alt="Profile"
+            className="w-full h-full object-cover transition-transform hover:scale-110 duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         </div>
 
         {/* Login container - full width on mobile, half width on desktop */}
-        <div className="w-full md:w-1/2 p-8">
-          <div className="text-center mb-8 animate-pulse">
-            <Heart className="w-12 h-12 text-red-500 mx-auto mb-4 animate-bounce" />
-            <h1 className="text-3xl font-bold text-gray-800 animate-fade-in">
+        <div className="w-full md:w-1/2 p-4 md:p-8">
+          <div className="text-center mb-6 md:mb-8">
+            <Heart className="w-8 h-8 md:w-12 md:h-12 text-red-500 mx-auto mb-2 md:mb-4 animate-bounce" />
+            <h1 className="text-xl md:text-3xl font-bold text-gray-800 animate-fade-in px-2">
               Happy Valentine's Day
             </h1>
           </div>
